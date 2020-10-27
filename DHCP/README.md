@@ -1,5 +1,5 @@
 # DHCP Overview
-All DHCP configuration files will be saved in the directory /etc/dhcp/ . 
+All DHCP configuration files will be saved in the directory /etc/dhcp/ and my configuration files will be in this folder. 
 # DHCP Install
 To install DHCP, run the command sudo apt-get install isc-dhcp-server
 (NOTE: you will need internet access.)
