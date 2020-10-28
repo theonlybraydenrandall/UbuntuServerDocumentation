@@ -29,8 +29,11 @@ Now lets use the current zone file as a template, you can copy the current templ
 
 We have to make a few changes to this file to work with our DNS.
 - Change the IP address to your DNS servers address, this should be your internal network adapters address.
-- 
+- Edit the line where you have localhost. and root.localhost. to your domain and root.your domain.
+an example of this would be yourdomain.example. and root.yourdomain.example.
+Don't forget to put the . at the end of each.
 - Edit the current A record located at the bottom of the zone file, change the IP (127.0.0.1) to your DNS servers address
-- 
+- at the bottom of your list of records your going to add a new wildcard record.
+instead of an @ you'll put a * then IN then CNAME and finally your domain, an example would be yourdomain.example. (don't forget the . at the end, and be sure to align the characters in each row with the previous ones, spacing matters.)
 
 After making all your changes, save and exit the file, and restart the BIND9 service by running the command sudo service bind9 restart.
