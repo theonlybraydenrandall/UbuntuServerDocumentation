@@ -13,6 +13,7 @@ forwarders {
      131.415.161.718.192;
 };
 
+(move the }; at the end of the zone to the next line down)
 Save and Exit this file.
 
 Next let's edit /etc/bind/named.conf.local.
@@ -24,6 +25,7 @@ zone "braydenrandall.com" {
 };
 
 you'll change "braydenrandall.com" to what you want.
+(move the }; at the end of the zone to the next line down)
 
 Now lets use the current zone file as a template, you can copy the current template to your own configuration, this will also provide you with a backup. Run the command sudo cp /etc/bind/db.local /etc/bind/db.yourdomain.com. Replace "yourdomain.com" with your DNS.
 
